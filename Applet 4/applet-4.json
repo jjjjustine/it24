@@ -1,0 +1,93 @@
+[
+    {
+      "student_id": 1,
+      "student_name": "Justine Catingan",
+      "student_program": "BS -INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-01-15"
+    },
+    {
+      "student_id": 2,
+      "student_name": "Rainiel Bernales",
+      "student_program": "BS -INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-02-20"
+    },
+    {
+      "student_id": 3,
+      "student_name": "Jane Catingan",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-03-10"
+    },
+    {
+      "student_id": 4,
+      "student_name": "Pauline Coming",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-04-05"
+    },
+    {
+      "student_id": 5,
+      "student_name": "Katelyn Coming",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-04-20"
+    },
+    {
+      "student_id": 6,
+      "student_name": "Joeroz Vicariato",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-05-15"
+    },
+    {
+      "student_id": 7,
+      "student_name": "Mark Octat",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-06-01"
+    },
+    {
+      "student_id": 8,
+      "student_name": "Jacob Ranin",
+      "student_program": "BS - INFORMATION TECHNOLOGY",
+      "student_enrolled_date": "2023-06-25"
+    },
+    {
+      "student_id": 9,
+      "student_name": "Michelle Bautista",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-07-10"
+    },
+    {
+      "student_id": 10,
+      "student_name": "Cindy Castana",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-08-15"
+    },
+    {
+      "student_id": 11,
+      "student_name": "Missy Labandero",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-09-05"
+    },
+    {
+      "student_id": 12,
+      "student_name": "Kent Lazaga",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-09-20"
+    },
+    {
+      "student_id": 13,
+      "student_name": "Trisha Mae Manangan",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-10-01"
+    },
+    {
+      "student_id": 14,
+      "student_name": "Honey Kaye Dasilao",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-10-15"
+    },
+    {
+      "student_id": 15,
+      "student_name": "Chella Apas",
+      "student_program": "BSBA - MARKETING",
+      "student_enrolled_date": "2021-11-05"
+    }
+  ]
+  
