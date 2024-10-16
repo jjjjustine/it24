@@ -24,11 +24,11 @@ class AppletGallery {
         const appletContainer = document.getElementById('appletContainer');
         appletContainer.innerHTML = applets.map(applet => 
             `<div class="card" style="width: 18rem;">
-                <img src="${applet.image}" class="card-img-top" alt="${applet.title}">
+                <img src="${applet.image}" class="card-img-top image" alt="${applet.title}"> <!-- Add 'image' class here -->
                 <div class="card-body">
-                  <h5 class="card-title">${applet.title}</h5>
-                  <p class="card-text">${applet.description}</p>
-                  <a href="${applet.link}" class="btn btn-primary">Go to ${applet.title}</a>
+                    <h5 class="card-title">${applet.title}</h5>
+                    <p class="card-text">${applet.description}</p>
+                    <a href="${applet.link}" class="btn btn-primary">Go to ${applet.title}</a>
                 </div>
              </div>`
         ).join('');
@@ -51,4 +51,3 @@ class AppletGallery {
 }
 
 const appletGallery = new AppletGallery('index.json');
-
