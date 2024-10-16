@@ -1,0 +1,26 @@
+[
+    {
+        "title": "APPLET 1 - BASIC EVENTS",
+        "description": "This application contains the basic implementation of DOM events.",
+        "link": "Applet 1/applet-1.html",
+        "image": "https://imgs.search.brave.com/efIlQF6oeA2BxtVWCapP9r3cXeqmOsUUv3Mx41pkwFM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzQ3Lzk3Lzgx/LzM2MF9GXzU0Nzk3/ODEyOF92cUVFVVlC/cjF2Y0F3ZlJBcVJl/WlhUWXR5YXdwZ0xj/Qy5qcGc"
+    },
+    {
+        "title": "APPLET 2 - LEAFLET MAP",
+        "description": "This application contains the basic web map.",
+        "link": "Applet 2/applet-2.html",
+        "image": "https://imgs.search.brave.com/sJyYjRFSYSXYUfAIt4KKfCDudFxFopOL4b0rb9FbWTk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA1LzQwLzgyLzEx/LzM2MF9GXzU0MDgy/MTE2N19hQXYza0tZ/SWFVcGIzR2tkNGli/M1F0NjFPRmNNV3VU/OC5qcGc"
+    },
+    {
+        "title": "APPLET 3 - EVENT LOGGER",
+        "description": "This shows the logs with the date and total number of logs.",
+        "link": "Applet 3/applet-3.html",
+        "image": "https://t4.ftcdn.net/jpg/05/55/71/83/240_F_555718315_XAi4cgO4s2uBRshlJZ8wXjAWkptX8023.jpg"
+    },
+    {
+        "title": "APPLET 4 - DYNAMIC ELEMENTS",
+        "description": "Dynamically displays a list of students with real-time search functionality.",
+        "link": "Applet 4/applet-4.html",
+        "image": "https://p4.wallpaperbetter.com/wallpaper/396/126/343/landscape-village-nature-hills-wallpaper-preview.jpg"
+    }
+]
