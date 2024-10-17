@@ -24,7 +24,7 @@ class AppletGallery {
         const appletContainer = document.getElementById('appletContainer');
         appletContainer.innerHTML = applets.map(applet => 
             `<div class="card" style="width: 18rem;">
-                <img src="${applet.image}" class="card-img-top image" alt="${applet.title}"> <!-- Add 'image' class here -->
+                <img src="${applet.image}" class="card-img-top image" alt="${applet.title}"> 
                 <div class="card-body">
                     <h5 class="card-title">${applet.title}</h5>
                     <p class="card-text">${applet.description}</p>
