@@ -50,4 +50,5 @@ class AppletGallery {
     }
 }
 
+
 const appletGallery = new AppletGallery('index.json');
