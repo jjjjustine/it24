@@ -22,5 +22,11 @@
         "description": "Dynamically displays a list of students with real-time search functionality.",
         "link": "index4.html",
         "image": "https://p4.wallpaperbetter.com/wallpaper/396/126/343/landscape-village-nature-hills-wallpaper-preview.jpg"
+    },
+    {
+        "title": "APPLET 5 - OPEN WEATHER",
+        "description": "Dynamically fetches and displays weather information for a specified city or user's location, utilizing the OpenWeatherMap API for real-time data updates.",
+        "link": "index5.html",
+        "image": "https://i.pinimg.com/originals/dc/03/21/dc0321c0e065c94d6aeed012f5407d0a.jpg"
     }
 ]
