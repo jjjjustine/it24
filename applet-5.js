@@ -90,4 +90,74 @@ class WeatherApp {
             alert('Geolocation is not supported by this browser.');
         }
     }
+
+    async fetchWeatherByLocationFromModal() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                    const { latitude, longitude } = position.coords;
+                    const apiKey = this.modalApiKeyInput.value;
+                    const data = await this.getWeatherDataByCoordinates(latitude, longitude, apiKey);
+                    if (data) {
+                        this.displayWeather(data);
+                    } else {
+                        alert('Unable to retrieve weather data for your location.');
+                    }
+                },
+                () => {
+                    alert('Unable to retrieve your location. Please allow location access.');
+                }
+            );
+        } else {
+            alert('Geolocation is not supported by this browser.');
+        }
+    }
+
+    async getWeatherData(city, apiKey) {
+        try {
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`);
+            if (response.ok) {
+                return await response.json();
+            }
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+        }
+        return null;
+    }
+
+    async getWeatherDataByCoordinates(latitude, longitude, apiKey) {
+        try {
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`);
+            if (response.ok) {
+                return await response.json();
+            }
+        } catch (error) {
+            console.error('Error fetching weather data by coordinates:', error);
+        }
+        return null;
+    }
+
+    displayWeather(data) {
+        this.cityName.textContent = `${data.name}, ${data.sys.country} (${data.coord.lat}, ${data.coord.lon})`;
+        this.temperature.textContent = `Temperature: ${data.main.temp} °C`;
+        this.description.textContent = `Weather: ${data.weather[0].description}`;
+        this.humidity.textContent = `Humidity: ${data.main.humidity}%`;
+        this.windSpeed.textContent = `Wind Speed: ${data.wind.speed} m/s`;
+
+        // Set the weather icon
+        const iconCode = data.weather[0].icon;
+        const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+        document.getElementById('weatherIcon').src = iconUrl;
+
+        this.weatherCard.style.display = 'block';
+        this.weatherCard.scrollIntoView({ behavior: 'smooth' });
+    }
 }
+
+// Initialize the WeatherApp
+const weatherApp = new WeatherApp();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = new bootstrap.Modal(document.getElementById('infoModal'));
+    modal.show();
+});
