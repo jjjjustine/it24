@@ -20,5 +20,20 @@ class WeatherApp {
         this.humidity = document.getElementById('humidity');
         this.windSpeed = document.getElementById('windSpeed');
 
+        // Event Listeners for Main Interface
+        this.getWeatherBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            this.fetchWeather();
+        });
+        
+        this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
+
+        // Event Listeners for Modal
+        this.modalGetWeatherBtn.addEventListener('click', (event) => {
+            event.preventDefault();
+            this.fetchWeatherFromModal();
+        });
+        
+        this.modalGetLocationBtn.addEventListener('click', () => this.fetchWeatherByLocationFromModal());
     }
 }
