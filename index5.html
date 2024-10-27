@@ -39,32 +39,35 @@
     </div>
 </nav>
 
-<div class="container">
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary mt-4" data-bs-toggle="modal" data-bs-target="#infoModal">Open Modal Input</button>
-
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center">Weather App</h1>
-            <div class="card text-white">
-                <div class="input-search">
-                    <input type="password" id="apiKeyInput" placeholder="Enter API Key" class="form-control mb-2" />
-                    <input type="text" id="cityInput" placeholder="Enter city name" class="form-control mb-2" />
-                    <button id="getWeatherBtn" class="btn btn-success mb-2">Get Weather</button>
-                    <button id="getLocationBtn" class="btn btn-secondary mb-2">Use My Location</button>
-                </div>
-                <div id="weatherCard" style="display: none; padding: 1rem; background-color: rgb(63, 63, 63);">
-                    <img id="weatherIcon" src="" alt="Weather Icon">
-                    <h2 id="cityName"></h2>
-                    <p id="temperature"></p>
-                    <p id="description"></p>
-                    <p id="humidity"></p>
-                    <p id="windSpeed"></p>
-                </div>
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="infoModalLabel">Input Via Modal</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h1 class="text-center">Weather App</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="modalApiKeyInput" class="form-label">API Key</label>
+                        <input type="password" class="form-control" id="modalApiKeyInput" placeholder="Enter API Key" required>
+                        <div class="form-text">We'll never share your API key with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="modalCityInput" class="form-label">City</label>
+                        <input type="text" class="form-control" id="modalCityInput" placeholder="Enter city name" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button id="modalGetWeatherBtn" class="btn btn-primary" data-bs-dismiss="modal">Get Weather</button>
+                <button id="modalGetLocationBtn" class="btn btn-secondary" data-bs-dismiss="modal">Use My Location</button>
             </div>
         </div>
     </div>
 </div>
 
+<script src="applet-5.js"></script>
 </body>
 </html>
