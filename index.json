@@ -28,5 +28,11 @@
         "description": "Dynamically fetches and displays weather information for a specified city or user's location, utilizing the OpenWeatherMap API for real-time data updates.",
         "link": "index5.html",
         "image": "https://i.pinimg.com/originals/dc/03/21/dc0321c0e065c94d6aeed012f5407d0a.jpg"
+    },
+    {
+        "title": "APPLET 6 - TO DO LIST",
+        "description": "A simple task manager where users can add, edit, mark as complete, and remove tasks. Each task displays a timestamp, making it easy to keep track of daily activities and completed items.",
+        "link": "index6.html",
+        "image": "https://img.freepik.com/premium-photo/cartoon-drawing-phone-with-pen-pen-with-pen-it_1085346-150715.jpg?semt=ais_hybrid"
     }
 ]
